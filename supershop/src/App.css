@@ -1,0 +1,141 @@
+/* 🌟 General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🌟 Header */
+header {
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+/* 🌟 Shopping Cart Button */
+.btn-outline-dark {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-outline-dark .badge {
+  background-color: #dc3545;
+  font-size: 14px;
+  padding: 5px 8px;
+  border-radius: 10px;
+}
+
+/* 🌟 ปรับขนาดกล่อง Card ให้เท่ากัน */
+.card {
+  width: 100%;
+  max-width: 300px; /* กำหนดความกว้างสูงสุด */
+  height: 100%; /* ทำให้ความสูงของ Card เท่ากัน */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* จัดเรียงเนื้อหา */
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 ปรับขนาดรูปภาพให้เท่ากัน */
+.card img {
+  width: 100%;
+  height: 200px; /* กำหนดความสูงคงที่ */
+  object-fit: cover; /* ครอบภาพให้เต็ม */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* 🌟 ปรับขนาด Card Body ให้ขยายเต็ม */
+.card-body {
+  flex-grow: 1; /* ทำให้เนื้อหาใน Card เต็ม */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/* 🌟 ปรับขนาดปุ่มให้เท่ากัน */
+.card .btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-dark, .btn-danger {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-dark:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* 🌟 Modal (Cart) */
+.modal-content {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  background: #007bff;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  background: #f1f1f1;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* 🌟 Footer */
+footer {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer .nav-link {
+  color: #ccc;
+  transition: color 0.3s ease-in-out;
+}
+
+footer .nav-link:hover {
+  color: white;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
